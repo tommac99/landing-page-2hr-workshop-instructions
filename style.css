@@ -12819,8 +12819,16 @@ readers do not read off random characters that represent icons */
   background-size: cover !important;
   display: flex;
   align-items: center;
-  justify-content: center; }
-
+  justify-content: center; 
+  animation: moveIn 2000ms ease-in-out forwards;}
+  @keyframes moveIn {
+    0% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 50% 50%;
+    }
+  }
 /* line 11, /Users/seb/code/lewagon/landing/source/stylesheets/components/_banner.scss */
 .banner h1 {
   font-size: 70px;
