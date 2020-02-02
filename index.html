@@ -13,6 +13,8 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Le Wagon 2-hour landing workshop</title>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <link href="./style.css" rel="stylesheet" type="text/css">
     <script src="./app.js" type="text/javascript"></script>
 
@@ -82,9 +84,7 @@
   <span class="nt">&lt;body&gt;</span>
     <span class="nt">&lt;h1&gt;</span>Invest Sustainably<span class="nt">&lt;/h1&gt;</span>
     <span class="nt">&lt;p&gt;</span>Earn money.  Be a Hero.<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;p&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Start now<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Start now<span class="nt">&lt;/a&gt;</span>
 
     <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/solar.svg"</span> <span class="na">alt=</span><span class="s">"picture description"</span> <span class="na">width=</span><span class="s">"100"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;h2&gt;</span>Solar Energy<span class="nt">&lt;/h2&gt;</span>
@@ -130,29 +130,28 @@
         </ul>
 <pre class="highlight css"><code><span class="c">/* style.css */</span>
 <span class="nt">body</span><span class="p">{</span>
-  <span class="nl">background</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">245</span><span class="p">,</span><span class="m">245</span><span class="p">,</span><span class="m">245</span><span class="p">);</span>
-  <span class="nl">color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="nb">rgba</span><span class="p">(</span><span class="m">232</span><span class="p">,</span><span class="m">215</span><span class="p">,</span><span class="m">200</span><span class="p">);</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nb">rgba</span><span class="p">(</span><span class="m">20</span><span class="p">,</span><span class="m">20</span><span class="p">,</span><span class="m">20</span><span class="p">);</span>
   <span class="nl">font-size</span><span class="p">:</span> <span class="m">25px</span><span class="p">;</span>
   <span class="nl">font-family</span><span class="p">:</span> <span class="n">Helvetica</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="n">0</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="nt">h1</span><span class="p">{</span>
   <span class="nl">font-family</span><span class="p">:</span> <span class="n">Courier</span><span class="p">;</span>
-  <span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
   <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">lighter</span><span class="p">;</span>
   <span class="nl">font-size</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="nt">h2</span> <span class="p">{</span>
   <span class="nl">font-family</span><span class="p">:</span> <span class="n">Courier</span><span class="p">;</span>
-  <span class="nl">color</span><span class="p">:</span> <span class="no">pink</span><span class="p">;</span>
   <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">lighter</span><span class="p">;</span>
   <span class="nl">font-size</span><span class="p">:</span> <span class="m">8px</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="nt">a</span> <span class="p">{</span>
-  <span class="nl">color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
-  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
-  <span class="nl">color</span><span class="p">:</span> <span class="no">purple</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nb">rgba</span><span class="p">(</span><span class="m">47</span><span class="p">,</span><span class="m">36</span><span class="p">,</span><span class="m">58</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre>
       </section>
@@ -163,7 +162,8 @@
 <pre class="highlight html"><code><span class="nt">&lt;div&gt;</span>
   <span class="nt">&lt;h1&gt;</span>Invest Sustainably<span class="nt">&lt;/h1&gt;</span>
   <span class="nt">&lt;p&gt;</span>Earn Money.  Be a Hero.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Start now<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
 
 <span class="nt">&lt;div&gt;</span>
   <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/solar.svg"</span> <span class="na">alt=</span><span class="s">"picture description"</span> <span class="na">width=</span><span class="s">"100"</span><span class="nt">&gt;</span>
@@ -298,11 +298,79 @@
 <span class="nt">&lt;/div&gt;</span>
 </code></pre>
       </section>
+      <section class="readme-section">
+        <h2 class="readme-header">9. Desktop & Mobile Responsive</h2>
+        <div style='display: flex; justify-content: space-evenly;'>
+          <img src="./images/desktop.jpg" width="70%">
+          <img src="./images/mobile.jpg" width="20%">
+        </div>
+      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">10. Adding Form</h2>
+        <ul>
+          <li>We can add a FREE email collecting form to our page with <a href="https://docs.google.com/spreadsheets/d/1BiMffNSMMj-VB-WhkTUIkVxfhEGfIaxVjFgMHz9SX9g/copy?usp=sharing">Google Sheets</a></li>
+          <li>We won't have time to create this form today.</li>
+          <li>Please give me some feedback on the workshop today.</li>
+          <li>Leave your email so I can send you more information about future workshops.</li>
+        </ul>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-8 col-lg-6 mx-auto pt-5">
+              <h3 class="center">Feedback on the Workshop</h3>
+              <form
+                class="gform"
+                method="POST"
+                action="https://script.google.com/macros/s/AKfycbwOB0CG4vRPRM_2Ci6b6sre26JKibQI57CWODJB/exec"
+              >
+                <!-- change the form action to your script url -->
+                <div class="form-elements">
+                  <fieldset class="form-group">
+                    <label for="email">Email address</label>
+                    <input
+                      name="email"
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="name@example.com"
+                      required
+                    />
+                  </fieldset>
+                  <fieldset class="form-group">
+                    <label for="message">Please write your feedback here?</label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      class="form-control"
+                      id="message"
+                      placeholder="This is private, only Thomas can read it."
+                      rows="3"
+                    ></textarea>
+                  </fieldset>
+                  <fieldset class="form-group">
+                    <input
+                      id="honeypot"
+                      name="honeypot"
+                      type="text"
+                      style="visibility: hidden;"
+                    />
+                  </fieldset>
+                  <div class="form-group center">
+                    <button type="submit" class="btn btn-lg btn-info">
+                      Send Mail
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
     </div>
   </div>
 </div>
 
   
-
+<script src="/form.js"></script>
 
 </body></html>
