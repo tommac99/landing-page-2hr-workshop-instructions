@@ -142,9 +142,12 @@
   <span class="nl">font-size</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="nt">h2</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">p</span> <span class="p">{</span>
   <span class="nl">font-family</span><span class="p">:</span> <span class="n">Courier</span><span class="p">;</span>
   <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">lighter</span><span class="p">;</span>
-  <span class="nl">font-size</span><span class="p">:</span> <span class="m">8px</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">18px</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="nt">a</span> <span class="p">{</span>
   <span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
@@ -272,8 +275,22 @@
   <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">'style.css'</span> <span class="na">rel=</span><span class="s">'stylesheet'</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
 </code></pre>
-          <p>Play with <code>class="btn btn-primary"</code> and <code>class="list-inline"</code>, your first Bootstrap classes</p>
+          <p>Play with <code>class="btn btn-primary"</code> and <code>class="list-inline"</code> with <code>class="list-inline-item"</code>, your first Bootstrap classes</p>
+          <p>We can over-ride the default Bootstrap card styling in our css</p>
+          <pre>
+            <span class="nf">.card</span> <span class="p">{</span>
+              <span class="nl">background</span><span class="p">:</span> <span class="no">transparent</span><span class="p">;</span>
+              <span class="nl">border</span><span class="p">:</span> <span class="no">none</span><span class="p">;</span>
+              <span class="nl">font-weight</span><span class="p">:</span> <span class="no">lighter</span><span class="p">;</span>
+              <span class="nl">text-align</span><span class="p">:</span> <span class="no">center</span><span class="p">;</span>
+              <span class="p">}</span>
 
+            <span class="nf">.card</span> <span class="nf">img </span><span class="p">{</span>
+              <span class="nl">width</span><span class="p">:</span> <span class="no">100px</span><span class="p">;</span>
+              <span class="nl">margin</span><span class="p">:</span> <span class="no">0 auto</span><span class="p">;</span>
+              <span class="nl">padding</span><span class="p">:</span> <span class="no">20px</span><span class="p">;</span>
+              <span class="p">}</span>
+          </pre>
       </section>
       <section class="readme-section">
         <h2 class="readme-header">8. Bootstrap grid</h2>
